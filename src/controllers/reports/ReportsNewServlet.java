@@ -33,12 +33,12 @@ public class ReportsNewServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setAttribute("_token", request.getSession().getId());
 
-		Report r = new Report();
-		r.setReport_date(new Date(System.currentTimeMillis()));
-		request.setAttribute("report", r);
+        Report r = new Report();
+        r.setReport_date(new Date(System.currentTimeMillis()));
+        request.setAttribute("report", r);
 
-		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/reports/new.jsp");
-		rd.forward(request, response);
+        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/reports/new.jsp");
+        rd.forward(request, response);
 	}
 
 }
