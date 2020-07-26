@@ -133,7 +133,7 @@ h1 a {
     color: #eeeeee;
 }
 
-table#report_ist th{
+table#report_list th{
 	font-weight: bold;
 	padding: 10px 2%;
 }
@@ -153,6 +153,14 @@ table#report_list .report_title{
 
 table#report_list .report_action{
 	width: 13%;
+}
+
+table#report.list .start_time{
+	width: 5%
+}
+
+table#report.list .end_time{
+	width: 5%
 }
 
 pre {
