@@ -27,11 +27,11 @@
 <br /><br />
 
 <label for="start_time">出勤時刻</label><br />
-<input type="text" name="start_time">
+<input type="time" name="start_time" value="${report.start_time}" />
 <br /><br />
 
 <label for="end_time">退勤時刻</label><br />
-<input type="text" name="end_time">
+<input type="time" name="end_time" value="${report.end_time}" />
 <br /><br />
 
 <input type="hidden" name="_token" value="${_token}" />
