@@ -48,6 +48,14 @@ public class ReportValidator {
 			return "出勤時刻と退勤時刻は同じ時間に設定できません";
 		}
 
+		if(start_time == null || start_time.equals("")){
+			return "出勤時刻を入力してください";
+		}
+
+		if(end_time == null || end_time.equals("")){
+			return "退勤時刻を入力してください";
+		}
+
 		Calendar start_timeCal = Calendar.getInstance();
 		Calendar end_timeCal = Calendar.getInstance();
 
